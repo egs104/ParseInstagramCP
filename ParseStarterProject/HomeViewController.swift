@@ -93,6 +93,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         PFUser.logOut()
         var currentUser = PFUser.currentUser()
+        print(currentUser)
         
         self.performSegueWithIdentifier("logoutSegue", sender: self)
         
