@@ -2,22 +2,22 @@
 
 **ParseInstagramCP** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User can sign up to create a new account using Parse authentication
-- [ ] User can log in and log out of his or her account
-- [ ] The current signed in user is persisted across app restarts
-- [ ] User can take a photo, add a caption, and post it to "Instagram"
-- [ ] User can view the last 20 posts submitted to "Instagram"
+- [x] User can sign up to create a new account using Parse authentication
+- [x] User can log in and log out of his or her account
+- [x] The current signed in user is persisted across app restarts
+- [x] User can take a photo, add a caption, and post it to "Instagram"
+- [x] User can view the last 20 posts submitted to "Instagram"
 
 The following **optional** features are implemented:
 
 - [ ] Show the username and creation time for each post
-- [ ] When the user is uploading a photo, show a progress indicator to show how much of the photo has been uploaded
+- [x] When the user is uploading a photo, show a progress indicator to show how much of the photo has been uploaded
 - [ ] User can connect his or her Facebook account
 - [ ] User can comment on a post and see all comments for each post
 
