@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+<<<<<<< HEAD
+=======
+   <FileRef
+      location = "self:/Users/ericsuarez/Developer/CodePath/ParseInstagramCP/ParseInstagramCP.xcodeproj">
+   </FileRef>
+>>>>>>> 547fde363d7c9e22de4ec7001968893c9c28c528
 </Workspace>
