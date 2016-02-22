@@ -120,7 +120,7 @@ class TableViewController: UITableViewController {
             friends[userIds[indexPath.row]] = usernames[indexPath.row]
             followedIds.append(userIds[indexPath.row])
             
-            
+            print(followedIds)
         }
 
         return cell

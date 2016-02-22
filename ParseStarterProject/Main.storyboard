@@ -122,8 +122,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="wUE-BK-g9a" kind="relationship" relationship="viewControllers" id="Bjq-ci-e7E"/>
-                        <segue destination="oTf-U5-n22" kind="relationship" relationship="viewControllers" id="UWg-GE-v9v"/>
                         <segue destination="AkV-VS-vDc" kind="relationship" relationship="viewControllers" id="e2p-q9-is7"/>
+                        <segue destination="oTf-U5-n22" kind="relationship" relationship="viewControllers" id="UWg-GE-v9v"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vwI-ch-nb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +140,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="sWA-If-3C0">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sWA-If-3C0" id="CQo-Lm-omd">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -154,9 +154,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="People to Follow" id="aR9-db-qNV">
-                        <barButtonItem key="rightBarButtonItem" title="Home" id="KS7-ia-Rnc"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="People to Follow" id="aR9-db-qNV"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -205,13 +203,13 @@
                                                         <constraint firstAttribute="height" constant="241" id="T5K-dQ-gUW"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao6-Xu-daE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ao6-Xu-daE">
                                                     <rect key="frame" x="8" y="263" width="359" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Nzn-b6-4cO"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" red="0.078431372549019607" green="0.25882352941176473" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -220,13 +218,11 @@
                                                 <constraint firstItem="ao6-Xu-daE" firstAttribute="leading" secondItem="Pdp-cy-O4e" secondAttribute="leadingMargin" id="Jfs-Ce-lop"/>
                                                 <constraint firstItem="Ls3-7c-Ibc" firstAttribute="top" secondItem="ao6-Xu-daE" secondAttribute="bottom" constant="8" id="OBH-ZT-Gx4"/>
                                                 <constraint firstItem="zGB-kd-Rzt" firstAttribute="top" secondItem="Pdp-cy-O4e" secondAttribute="topMargin" id="OTQ-WP-Kjc"/>
-                                                <constraint firstItem="Ls3-7c-Ibc" firstAttribute="top" secondItem="ao6-Xu-daE" secondAttribute="bottom" constant="8" id="WMD-ST-gze"/>
                                                 <constraint firstItem="ao6-Xu-daE" firstAttribute="top" secondItem="zGB-kd-Rzt" secondAttribute="bottom" constant="14" id="ZvP-py-Om9"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zGB-kd-Rzt" secondAttribute="trailing" constant="-8" id="b4m-xO-Bde"/>
                                                 <constraint firstItem="Ls3-7c-Ibc" firstAttribute="trailing" secondItem="Pdp-cy-O4e" secondAttribute="trailingMargin" id="bLW-vA-SD8"/>
                                                 <constraint firstItem="Ls3-7c-Ibc" firstAttribute="leading" secondItem="Pdp-cy-O4e" secondAttribute="leadingMargin" id="cn7-03-WdF"/>
                                                 <constraint firstItem="ao6-Xu-daE" firstAttribute="trailing" secondItem="Pdp-cy-O4e" secondAttribute="trailingMargin" id="hsZ-6y-3SR"/>
-                                                <constraint firstItem="ao6-Xu-daE" firstAttribute="top" secondItem="zGB-kd-Rzt" secondAttribute="bottom" constant="14" id="tiT-vW-MIb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -287,7 +283,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BTv-7S-JVC" kind="show" id="JA2-eh-1wS"/>
+                                            <segue destination="BTv-7S-JVC" kind="show" identifier="friendProfile" id="JA2-eh-1wS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -299,7 +295,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J43-SV-7ba"/>
+                    <navigationItem key="navigationItem" id="J43-SV-7ba">
+                        <barButtonItem key="rightBarButtonItem" title="Follow Users" id="hpf-LU-TMI">
+                            <connections>
+                                <segue destination="OUg-ZC-uug" kind="show" id="KeE-0v-VdB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="Yk0-4h-i5y" id="8q8-F8-eYi"/>
@@ -360,7 +362,6 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem id="eik-UX-xd0">
-                                        <barButtonItem key="leftBarButtonItem" title="Friends" id="GAY-S5-yEw"/>
                                         <barButtonItem key="rightBarButtonItem" title="My Profile" id="xkI-IW-krU"/>
                                     </navigationItem>
                                 </items>
@@ -379,7 +380,7 @@
                             <constraint firstItem="mlQ-Yp-FVI" firstAttribute="top" secondItem="tRf-aC-MWs" secondAttribute="bottom" constant="79" id="si9-RF-XTr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Post" id="TXI-zP-1mb"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="camera" id="TXI-zP-1mb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="caption" destination="l28-oH-lzb" id="W50-hL-qt6"/>
@@ -614,7 +615,6 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Home" id="rSA-XE-XaT">
-                                        <barButtonItem key="leftBarButtonItem" title="My Profile" id="EMW-cN-Ooh"/>
                                         <barButtonItem key="rightBarButtonItem" title="Logout" id="Cbb-po-ag8">
                                             <connections>
                                                 <action selector="logout:" destination="wUE-BK-g9a" id="xfR-0v-WMR"/>
@@ -686,7 +686,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="Gg1-sg-TVp"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="Gg1-sg-TVp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="nGj-V6-e9Y" id="nbu-jr-Tty"/>
@@ -701,7 +701,7 @@
         <scene sceneID="wov-1E-6aq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oTf-U5-n22" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="p8I-YG-Q0M"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="friends" id="p8I-YG-Q0M"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wr7-NW-HYB">
@@ -718,6 +718,11 @@
             <point key="canvasLocation" x="705.5" y="2057.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" width="20" height="18"/>
+        <image name="friends" width="22" height="14"/>
+        <image name="home" width="20" height="17"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MmS-nd-FcH"/>
         <segue reference="THv-eu-jOq"/>

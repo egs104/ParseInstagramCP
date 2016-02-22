@@ -21,8 +21,15 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         // Do any additional setup after loading the view.
         print(friends)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,7 +67,7 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
         selectedFriend = friends[followedIds[indexPath.row]]!
         selectedUserId = followedIds[indexPath.row]
         
-        self.performSegueWithIdentifier("friendProfile", sender: self)
+        //self.performSegueWithIdentifier("friendProfile", sender: self)
         
 //        print(selectedUserId)
 //        print(selectedFriend)
@@ -69,14 +76,12 @@ class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//    }
+
 
 }
